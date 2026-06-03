@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Movie Reviews - Inicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>MovieXML dB</h1>
+        <nav>
+            <a href="index.html"><button style="background: #570b9d; color: black; border-color: #570b9d;">Inicio</button></a>
+            <a href="buscar.html"><button>Buscar</button></a>
+            <a href="generos.html"><button>Géneros</button></a>
+            <a href="top10.html"><button>Top 10</button></a>
+            <a href="historico.html"><button>Histórico</button></a>
+            <a href="acerca.html"><button>Estadísticas</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Catálogo Completo de Películas</h2>
+        <div id="contenedor-peliculas" class="grid-peliculas">
+            <p>Cargando cartelera desde el archivo XML...</p>
+        </div>
+    </main>
+
+    <script>
+        async function cargarCartelera() {
+            try {
+                const respuesta = await fetch('peliculas.xml');
+                const textoXML = await respuesta.text();
+                
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(textoXML, "text/xml");
+                
+                const peliculas = xml.getElementsByTagName("pelicula");
+                const contenedor = document.getElementById("contenedor-peliculas");
+                
+                let htmlContenido = "";
+
+                for (let i = 0; i < peliculas.length; i++) {
+                    const id = peliculas[i].getAttribute("id");
+                    const titulo = peliculas[i].getElementsByTagName("titulo")[0].textContent;
+                    const director = peliculas[i].getElementsByTagName("director")[0].textContent;
+                    const año = peliculas[i].getElementsByTagName("año")[0].textContent;
+                    const tipo = peliculas[i].getElementsByTagName("tipo")[0].textContent;
+                    const rating = peliculas[i].getElementsByTagName("puntuacion_general")[0].textContent;
+
+                    htmlContenido += `
+                        <div class="tarjeta-pelicula">
+                            <div>
+                                <h3 class="titulo-peli">${titulo}</h3>
+                                <p class="info-peli"><strong>Año:</strong> ${año}</p>
+                                <p class="info-peli"><strong>Género:</strong> ${tipo}</p>
+                                <p class="info-peli"><strong>Director:</strong> ${director}</p>
+                            </div>
+                            <div>
+                                <div class="rating-peli">★ ${rating}</div>
+                                <a class="btn-ver" href="detalle.html?id=${id}">Ver Ficha</a>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                contenedor.innerHTML = htmlContenido;
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById("contenedor-peliculas").innerHTML = 
+                    "<p style='color: red;'>Error al cargar las películas. Asegúrate de estar usando un servidor local o extensión Live Server.</p>";
+            }
+        }
+
+        window.onload = cargarCartelera;
+    </script>
+</body>
+</html>
