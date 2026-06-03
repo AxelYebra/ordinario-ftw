@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cartelera>
+    <pelicula id="1">
+        <titulo>Scott Pilgrim vs. The World</titulo>
+        <director>Edgar Wright</director>
+        <año>2010</año>
+        <tipo>Comedia</tipo>
+        <duracion>112 min</duracion>
+        <sinopsis>Para conquistar a Ramona Flowers, Scott Pilgrim debe derrotar a sus siete ex novios malvados en combates inspirados en videojuegos.</sinopsis>
+        <puntuacion_general>8.2</puntuacion_general>
+        <reseñas>
+            <reseña id_res="101">
+                <usuario>Cinefilo</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Una joya visual y de edición. Ritmo frenético de principio a fin.</comentario>
+                <fecha>2026-03-12</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="2">
+        <titulo>La vida secreta de Walter Mitty</titulo>
+        <director>Ben Stiller</director>
+        <año>2013</año>
+        <tipo>Drama</tipo>
+        <duracion>114 min</duracion>
+        <sinopsis>Un empleado de la revista Life atrapado en la rutina emprende una aventura real que supera cualquiera de sus fantasías cotidianas.</sinopsis>
+        <puntuacion_general>7.3</puntuacion_general>
+        <reseñas>
+            <reseña id_res="201">
+                <usuario>ViajeroDelMundo</usuario>
+                <calificacion>8</calificacion>
+                <comentario>Paisajes increíbles y un mensaje inspirador sobre salir de la zona de confort.</comentario>
+                <fecha>2026-04-01</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="3">
+        <titulo>The Truman Show</titulo>
+        <director>Peter Weir</director>
+        <año>1998</año>
+        <tipo>Drama</tipo>
+        <duracion>103 min</duracion>
+        <sinopsis>Un vendedor de seguros descubre que toda su vida es en realidad un reality show de televisión transmitido a nivel mundial de forma ininterrumpida.</sinopsis>
+        <puntuacion_general>8.2</puntuacion_general>
+        <reseñas>
+            <reseña id_res="301">
+                <usuario>Cinefilo</usuario>
+                <calificacion>10</calificacion>
+                <comentario>Jim Carrey demuestra un nivel actoral dramático impresionante. Profunda y adelantada a su época.</comentario>
+                <fecha>2026-01-15</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="4">
+        <titulo>Gran Torino</titulo>
+        <director>Clint Eastwood</director>
+        <año>2008</año>
+        <tipo>Drama</tipo>
+        <duracion>116 min</duracion>
+        <sinopsis>Un veterano de la guerra de Corea cascarrabias reforma a su vecino adolescente cuando este intenta robar su auto más preciado.</sinopsis>
+        <puntuacion_general>8.1</puntuacion_general>
+        <reseñas>
+            <reseña id_res="401">
+                <usuario>Nostalgico</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Una dirección magistral de Eastwood. El final es crudo pero perfecto.</comentario>
+                <fecha>2026-02-20</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="5">
+        <titulo>Rango</titulo>
+        <director>Gore Verbinski</director>
+        <año>2011</año>
+        <tipo>Animación</tipo>
+        <duracion>107 min</duracion>
+        <sinopsis>Un camaleón mascota atrapado en una crisis de identidad termina varado en un pueblo del salvaje oeste que necesita desesperadamente un sheriff.</sinopsis>
+        <puntuacion_general>7.3</puntuacion_general>
+        <reseñas>
+            <reseña id_res="501">
+                <usuario>AnimFan</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Una de las mejores películas animadas de la historia fuera de Disney. Estilo visual único.</comentario>
+                <fecha>2026-05-11</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="6">
+        <titulo>Megamente</titulo>
+        <director>Tom McGrath</director>
+        <año>2010</año>
+        <tipo>Animación</tipo>
+        <duracion>96 min</duracion>
+        <sinopsis>El supervillano Megamente finalmente derrota a su archienemigo Metro Man, pero descubre que la vida no tiene sentido sin un héroe al cual combatir.</sinopsis>
+        <puntuacion_general>7.3</puntuacion_general>
+        <reseñas>
+            <reseña id_res="601">
+                <usuario>MemeLord</usuario>
+                <calificacion>8</calificacion>
+                <comentario>Incomprendida en su momento, pero el guion es sumamente divertido y tiene memes eternos.</comentario>
+                <fecha>2026-03-30</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="7">
+        <titulo>El club de la pelea</titulo>
+        <director>David Fincher</director>
+        <año>1999</año>
+        <tipo>Drama</tipo>
+        <duracion>139 min</duracion>
+        <sinopsis>Un oficinista insomne y un carismático fabricante de jabón forman un club de lucha subterráneo que evoluciona hacia algo caótico.</sinopsis>
+        <puntuacion_general>8.8</puntuacion_general>
+        <reseñas>
+            <reseña id_res="701">
+                <usuario>Cinefilo</usuario>
+                <calificacion>10</calificacion>
+                <comentario>La primera regla del club es que nadie habla del club. Un clásico absoluto de culto.</comentario>
+                <fecha>2026-02-14</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="8">
+        <titulo>Project Hail Mary</titulo>
+        <director>Drew Goddard</director>
+        <año>2026</año>
+        <tipo>Ciencia Ficción</tipo>
+        <duracion>142 min</duracion>
+        <sinopsis>Un maestro de ciencias despierta solo en una nave espacial sin recuerdos, teniendo que usar la ciencia para salvar a la Tierra de un evento de extinción.</sinopsis>
+        <puntuacion_general>8.5</puntuacion_general>
+        <reseñas>
+            <reseña id_res="801">
+                <usuario>SciFi_Fan</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Adaptación fantástica del libro de Andy Weir. Fiel, inteligente y muy emocionante.</comentario>
+                <fecha>2026-05-28</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="9">
+        <titulo>Five Nights at Freddy's</titulo>
+        <director>Emma Tammi</director>
+        <año>2023</año>
+        <tipo>Terror</tipo>
+        <duracion>109 min</duracion>
+        <sinopsis>Un guardia de seguridad problemático empieza a trabajar en Freddy Fazbear's Pizza y descubre que los animatrónicos se mueven por la noche.</sinopsis>
+        <puntuacion_general>5.5</puntuacion_general>
+        <reseñas>
+            <reseña id_res="901">
+                <usuario>GamerG</usuario>
+                <calificacion>7</calificacion>
+                <comentario>Para los fans del juego es un gran tributo. Como película de terror independiente se queda algo corta.</comentario>
+                <fecha>2026-01-22</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="10">
+        <titulo>Los Increíbles</titulo>
+        <director>Brad Bird</director>
+        <año>2004</año>
+        <tipo>Animación</tipo>
+        <duracion>115 min</duracion>
+        <sinopsis>Una familia de superhéroes encubiertos intenta vivir una vida suburbana normal, pero se ven obligados a actuar para salvar al mundo.</sinopsis>
+        <puntuacion_general>8.0</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1001">
+                <usuario>AnimFan</usuario>
+                <calificacion>10</calificacion>
+                <comentario>El mejor guion sobre superhéroes jamás escrito. La música de Giacchino es sensacional.</comentario>
+                <fecha>2026-04-18</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="11">
+        <titulo>Lluvia de hamburguesas</titulo>
+        <director>Phil Lord</director>
+        <año>2009</año>
+        <tipo>Animación</tipo>
+        <duracion>90 min</duracion>
+        <sinopsis>Un inventor local frustrado crea una máquina que hace que la comida caiga del cielo como si fuera lluvia, desatando el caos.</sinopsis>
+        <puntuacion_general>6.9</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1101">
+                <usuario>MemeLord</usuario>
+                <calificacion>8</calificacion>
+                <comentario>Un humor absurdista excelente que divierte tanto a niños como a adultos.</comentario>
+                <fecha>2026-04-05</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="12">
+        <titulo>La cosa</titulo>
+        <director>John Carpenter</director>
+        <año>1982</año>
+        <tipo>Terror</tipo>
+        <duracion>109 min</duracion>
+        <sinopsis>Un equipo de investigación en la Antártida es acechado por un alienígena cambiante que puede asumir la apariencia de sus víctimas.</sinopsis>
+        <puntuacion_general>8.2</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1201">
+                <usuario>Nostalgico</usuario>
+                <calificacion>10</calificacion>
+                <comentario>Efectos prácticos inigualables. Una atmósfera claustrofóbica y de paranoia perfecta.</comentario>
+                <fecha>2026-02-11</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="13">
+        <titulo>Depredador</titulo>
+        <director>John McTiernan</director>
+        <año>1987</año>
+        <tipo>Acción</tipo>
+        <duracion>107 min</duracion>
+        <sinopsis>Un equipo de fuerzas especiales en una misión en la selva centroamericana es cazado por un guerrero alienígena tecnológicamente avanzado.</sinopsis>
+        <puntuacion_general>7.8</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1301">
+                <usuario>Nostalgico</usuario>
+                <calificacion>8</calificacion>
+                <comentario>Acción ochentera pura con Arnold Schwarzenegger en su punto álgido.</comentario>
+                <fecha>2026-01-09</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="14">
+        <titulo>Jeepers Creepers</titulo>
+        <director>Victor Salva</director>
+        <año>2001</año>
+        <tipo>Terror</tipo>
+        <duracion>90 min</duracion>
+        <sinopsis>Dos hermanos que regresan a casa por las carreteras secundarias del campo descubren a una criatura ancestral devoradora de órganos.</sinopsis>
+        <puntuacion_general>6.2</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1401">
+                <usuario>GamerG</usuario>
+                <calificacion>7</calificacion>
+                <comentario>Los primeros 30 minutos de la película son increíblemente terroríficos.</comentario>
+                <fecha>2026-04-22</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="15">
+        <titulo>Son como niños</titulo>
+        <director>Dennis Dugan</director>
+        <año>2010</año>
+        <tipo>Comedia</tipo>
+        <duracion>102 min</duracion>
+        <sinopsis>Cinco amigos de la infancia se reúnen un fin de semana después de treinta años para honrar el fallecimiento de su entrenador de básquetbol.</sinopsis>
+        <puntuacion_general>6.0</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1501">
+                <usuario>MemeLord</usuario>
+                <calificacion>7</calificacion>
+                <comentario>No es alta escuela de comedia, pero es genial para pasar el rato los domingos con la familia.</comentario>
+                <fecha>2026-05-02</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="16">
+        <titulo>Norbit</titulo>
+        <director>Brian Robbins</director>
+        <año>2007</año>
+        <tipo>Comedia</tipo>
+        <duracion>102 min</duracion>
+        <sinopsis>Un hombre amable forzado a casarse con una mujer controladora y gigantesca encuentra la oportunidad de reencontrarse con su amor de la infancia.</sinopsis>
+        <puntuacion_general>4.1</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1601">
+                <usuario>MemeLord</usuario>
+                <calificacion>5</calificacion>
+                <comentario>Eddie Murphy hace todos los personajes imaginables. Absurda a niveles colosales.</comentario>
+                <fecha>2026-03-19</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="17">
+        <titulo>Iron Man</titulo>
+        <director>Jon Favreau</director>
+        <año>2008</año>
+        <tipo>Acción</tipo>
+        <duracion>126 min</duracion>
+        <sinopsis>Un industrial multimillonario es capturado en el extranjero y construye una armadura blindada de alta tecnología para escapar, convirtiéndose en héroe.</sinopsis>
+        <puntuacion_general>7.9</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1701">
+                <usuario>SciFi_Fan</usuario>
+                <calificacion>9</calificacion>
+                <comentario>El nacimiento del universo Marvel. Robert Downey Jr. nació para interpretar este papel.</comentario>
+                <fecha>2026-01-29</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="18">
+        <titulo>The Batman</titulo>
+        <director>Matt Reeves</director>
+        <año>2022</año>
+        <tipo>Acción</tipo>
+        <duracion>176 min</duracion>
+        <sinopsis>En su segundo año combatiendo el crimen, Batman descubre la corrupción en Ciudad Gótica mientras persigue al Asertijo, un asesino en serie.</sinopsis>
+        <puntuacion_general>7.8</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1801">
+                <usuario>Cinefilo</usuario>
+                <calificacion>8</calificacion>
+                <comentario>Estilo detectivesco espectacular, muy influenciada por la película Se7en. Gran fotografía.</comentario>
+                <fecha>2026-03-05</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="19">
+        <titulo>The Lego Movie</titulo>
+        <director>Phil Lord</director>
+        <año>2014</año>
+        <tipo>Animación</tipo>
+        <duracion>100 min</duracion>
+        <sinopsis>An ordinary LEGO construction worker, thought to be the prophesied 'Special', is recruited to join a quest to stop an evil tyrant.</sinopsis>
+        <puntuacion_general>7.7</puntuacion_general>
+        <reseñas>
+            <reseña id_res="1901">
+                <usuario>AnimFan</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Sorprendentemente inteligente, un ritmo cómico impecable y un giro de guion conmovedor.</comentario>
+                <fecha>2026-04-11</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="20">
+        <titulo>Scary Movie</titulo>
+        <director>Keenen Ivory Wayans</director>
+        <año>2000</año>
+        <tipo>Comedia</tipo>
+        <duracion>88 min</duracion>
+        <sinopsis>Un grupo de adolescentes despistados es acosado por un asesino enmascarado muy torpe, un año después de haber atropellado accidentalmente a un hombre.</sinopsis>
+        <puntuacion_general>6.3</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2001">
+                <usuario>MemeLord</usuario>
+                <calificacion>8</calificacion>
+                <comentario>La parodia definitiva de Scream y Sé lo que hicieron el verano pasado. Shorty y Cindy son legendarios.</comentario>
+                <fecha>2026-05-01</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="21">
+        <titulo>Oppenheimer</titulo>
+        <director>Christopher Nolan</director>
+        <año>2023</año>
+        <tipo>Drama</tipo>
+        <duracion>180 min</duracion>
+        <sinopsis>La historia del físico teórico J. Robert Oppenheimer y su papel en el Proyecto Manhattan que llevó al desarrollo de las primeras armas nucleares.</sinopsis>
+        <puntuacion_general>8.3</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2101">
+                <usuario>Cinefilo</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Diseño de sonido tenso, actuaciones de primer nivel. Cillian Murphy brilla de forma soberbia.</comentario>
+                <fecha>2026-05-19</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="22">
+        <titulo>Kung Fu Panda</titulo>
+        <director>John Stevenson</director>
+        <año>2008</año>
+        <tipo>Animación</tipo>
+        <duracion>92 min</duracion>
+        <sinopsis>Po, un oso panda perezoso, es elegido inesperadamente como el Guerrero Dragón para defender el Valle de la Paz de un leopardo de nieve malvado.</sinopsis>
+        <puntuacion_general>7.6</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2201">
+                <usuario>AnimFan</usuario>
+                <calificacion>8</calificacion>
+                <comentario>Grandes secuencias de acción coreografiadas y un mensaje hermoso sobre la fe en uno mismo.</comentario>
+                <fecha>2026-04-14</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="23">
+        <titulo>Amores Perros</titulo>
+        <director>Alejandro González Iñárritu</director>
+        <año>2000</año>
+        <tipo>Drama</tipo>
+        <duracion>154 min</duracion>
+        <sinopsis>Un trágico accidente automovilístico en la Ciudad de México conecta tres historias cruzadas que involucran a personas de distintos estratos sociales.</sinopsis>
+        <puntuacion_general>8.1</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2301">
+                <usuario>Cinefilo</usuario>
+                <calificacion>10</calificacion>
+                <comentario>Un hito en la historia del cine latinoamericano. Cruda, realista e inolvidable.</comentario>
+                <fecha>2026-02-18</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="24">
+        <titulo>La delgada línea amarilla</titulo>
+        <director>Celso R. García</director>
+        <año>2015</año>
+        <tipo>Drama</tipo>
+        <duracion>95 min</duracion>
+        <sinopsis>Cinco hombres son contratados para pintar la línea amarilla de una carretera que conecta dos pueblos de México, cambiando sus vidas en el trayecto.</sinopsis>
+        <puntuacion_general>7.4</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2401">
+                <usuario>ViajeroDelMundo</usuario>
+                <calificacion>8</calificacion>
+                <comentario>Una historia minimalista pero cargada de una inmensa emotividad y fraternidad.</comentario>
+                <fecha>2026-03-24</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="25">
+        <titulo>Nacho Libre</titulo>
+        <director>Jared Hess</director>
+        <año>2006</año>
+        <tipo>Comedia</tipo>
+        <duracion>92 min</duracion>
+        <sinopsis>Un cocinero de un orfanato mexicano decide convertirse en luchador enmascarado en secreto para ganar dinero y mejorar la comida de los huérfanos.</sinopsis>
+        <puntuacion_general>6.5</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2501">
+                <usuario>MemeLord</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Jack Black se luce por completo. Comedia totalmente disfrutable y llena de citas memorables.</comentario>
+                <fecha>2026-04-12</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="26">
+        <titulo>Ciudad de Dios</titulo>
+        <director>Fernando Meirelles</director>
+        <año>2002</año>
+        <tipo>Drama</tipo>
+        <duracion>130 min</duracion>
+        <sinopsis>En los suburbios de Río de Janeiro, dos niños toman caminos opuestos: uno lucha por convertirse en fotógrafo y el otro se vuelve un capo del crimen.</sinopsis>
+        <puntuacion_general>8.6</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2601">
+                <usuario>Cinefilo</usuario>
+                <calificacion>10</calificacion>
+                <comentario>El ritmo de la edición y la crudeza del guion la vuelven una de las mejores obras maestras mundiales.</comentario>
+                <fecha>2026-01-20</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="27">
+        <titulo>Spider-Man 2</titulo>
+        <director>Sam Raimi</director>
+        <año>2004</año>
+        <tipo>Acción</tipo>
+        <duracion>127 min</duracion>
+        <sinopsis>Peter Parker lidia con crisis en su vida personal mientras se enfrenta al brillante científico Otto Octavius, transformado en el Doctor Octopus.</sinopsis>
+        <puntuacion_general>7.5</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2701">
+                <usuario>Nostalgico</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Estableció el estándar de oro para las secuelas de superhéroes. La escena del tren es eterna.</comentario>
+                <fecha>2026-05-15</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="28">
+        <titulo>Click</titulo>
+        <director>Frank Coraci</director>
+        <año>2006</año>
+        <tipo>Comedia</tipo>
+        <duracion>107 min</duracion>
+        <sinopsis>Un arquitecto adicto al trabajo encuentra un control remoto universal que le permite adelantar, pausar o retrasar los eventos de su vida real.</sinopsis>
+        <puntuacion_general>6.9</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2801">
+                <usuario>MemeLord</usuario>
+                <calificacion>7</calificacion>
+                <comentario>Empieza como una comedia tonta de Adam Sandler y termina haciéndote llorar como un bebé bajo la lluvia.</comentario>
+                <fecha>2026-04-30</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="29">
+        <titulo>No se aceptan devoluciones</titulo>
+        <director>Eugenio Derbez</director>
+        <año>2013</año>
+        <tipo>Comedia</tipo>
+        <duracion>115 min</duracion>
+        <sinopsis>Un soltero acapulqueño de repente debe hacerse cargo de una bebé abandonada en su puerta, viajando a Los Ángeles para darle una vida feliz.</sinopsis>
+        <puntuacion_general>7.5</puntuacion_general>
+        <reseñas>
+            <reseña id_res="2901">
+                <usuario>ViajeroDelMundo</usuario>
+                <calificacion>8</calificacion>
+                <comentario>Una montaña rusa de emociones. Tiene momentos graciosos y un cierre devastador.</comentario>
+                <fecha>2026-02-28</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="30">
+        <titulo>Scooby-Doo</titulo>
+        <director>Raja Gosnell</director>
+        <año>2002</año>
+        <tipo>Comedia</tipo>
+        <duracion>86 min</duracion>
+        <sinopsis>La pandilla de Misterio a la Orden se reúne tras una ruptura para investigar sucesos paranormales en un excéntrico parque de atracciones isleño.</sinopsis>
+        <puntuacion_general>5.2</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3001">
+                <usuario>Nostalgico</usuario>
+                <calificacion>7</calificacion>
+                <comentario>Guion adaptado por James Gunn. Es ridícula, bizarra y absurdamente nostálgica para nuestra generación.</comentario>
+                <fecha>2026-05-05</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="31">
+        <titulo>Guardianes de la Galaxia</titulo>
+        <director>James Gunn</director>
+        <año>2014</año>
+        <tipo>Ciencia Ficción</tipo>
+        <duracion>121 min</duracion>
+        <sinopsis>Un grupo de forajidos intergalácticos se ve obligado a unirse para detener a un fanático guerrero que planea purgar el universo entero.</sinopsis>
+        <puntuacion_general>8.0</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3101">
+                <usuario>SciFi_Fan</usuario>
+                <calificacion>9</calificacion>
+                <comentario>La banda sonora de clásicos pop/rock y la carisma del elenco la vuelven de lo mejor de la ciencia ficción moderna.</comentario>
+                <fecha>2026-03-14</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="32">
+        <titulo>Hombres de Negro</titulo>
+        <director>Barry Sonnenfeld</director>
+        <año>1997</año>
+        <tipo>Ciencia Ficción</tipo>
+        <duracion>98 min</duracion>
+        <sinopsis>Un oficial de policía neoyorquino es reclutado por una organización secreta que supervisa la actividad extraterrestre encubierta en la Tierra.</sinopsis>
+        <puntuacion_general>7.3</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3201">
+                <usuario>Nostalgico</usuario>
+                <calificacion>8</calificacion>
+                <comentario>La química entre Will Smith y Tommy Lee Jones es legendaria. Entretenimiento puro de los 90s.</comentario>
+                <fecha>2026-01-11</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="33">
+        <titulo>The Matrix</titulo>
+        <director>Lana Wachowski</director>
+        <año>1999</año>
+        <tipo>Ciencia Ficción</tipo>
+        <duracion>136 min</duracion>
+        <sinopsis>Un hacker descubre por medio de misteriosos rebeldes la impactante verdad de que su realidad es una simulación construida por máquinas ciber-inteligentes.</sinopsis>
+        <puntuacion_general>8.7</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3301">
+                <usuario>SciFi_Fan</usuario>
+                <calificacion>10</calificacion>
+                <comentario>Redefinió los efectos visuales (el tiempo bala) y la filosofía en el cine moderno de acción.</comentario>
+                <fecha>2026-02-19</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="34">
+        <titulo>Van Helsing</titulo>
+        <director>Stephen Sommers</director>
+        <año>2004</año>
+        <tipo>Terror</tipo>
+        <duracion>131 min</duracion>
+        <sinopsis>El famoso cazador de monstruos es enviado a Transilvania para detener al Conde Drácula, quien usa las investigaciones de Frankenstein con fines malévolos.</sinopsis>
+        <puntuacion_general>6.1</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3401">
+                <usuario>GamerG</usuario>
+                <calificacion>6</calificacion>
+                <comentario>Mucho CGI exagerado, pero ver a Drácula, el Hombre Lobo y Frankenstein juntos es muy divertido.</comentario>
+                <fecha>2026-03-21</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="35">
+        <titulo>Coraline y la puerta secreta</titulo>
+        <director>Henry Selick</director>
+        <año>2009</año>
+        <tipo>Animación</tipo>
+        <duracion>100 min</duracion>
+        <sinopsis>Una niña aventurera encuentra un mundo paralelo idealizado detrás de una puerta secreta en su casa, ignorando los oscuros secretos que esconde.</sinopsis>
+        <puntuacion_general>7.7</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3501">
+                <usuario>AnimFan</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Fascinante stop-motion. Una atmósfera tétrica maravillosa adaptada del relato de Neil Gaiman.</comentario>
+                <fecha>2026-05-10</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="36">
+        <titulo>El extraño mundo de Jack</titulo>
+        <director>Henry Selick</director>
+        <año>1993</año>
+        <tipo>Animación</tipo>
+        <duracion>76 min</duracion>
+        <sinopsis>El rey de la ciudad de Halloween, Jack Skellington, descubre la ciudad de la Navidad y decide tomar el control de la festividad de forma desastrosa.</sinopsis>
+        <puntuacion_general>8.0</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3601">
+                <usuario>Nostalgico</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Banda sonora insuperable de Danny Elfman. Un clásico infaltable tanto en Octubre como en Diciembre.</comentario>
+                <fecha>2026-04-04</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="37">
+        <titulo>Qué pasó ayer?</titulo>
+        <director>Todd Phillips</director>
+        <año>2009</año>
+        <tipo>Comedia</tipo>
+        <duracion>100 min</duracion>
+        <sinopsis>Tres amigos en una despedida de soltero en Las Vegas despiertan sin recuerdos de la noche anterior y descubren que el novio ha desaparecido.</sinopsis>
+        <puntuacion_general>7.7</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3701">
+                <usuario>MemeLord</usuario>
+                <calificacion>8</calificacion>
+                <comentario>La comedia de misterio definitiva. Los créditos finales con las fotos perdidas completan la obra.</comentario>
+                <fecha>2026-05-12</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="38">
+        <titulo>Una esposa de mentira</titulo>
+        <director>Dennis Dugan</director>
+        <año>2011</año>
+        <tipo>Comedia</tipo>
+        <duracion>117 min</duracion>
+        <sinopsis>Un cirujano plástico convence a su asistente de simular ser su futura ex esposa para cubrir una mentira que le dijo a su joven novia en Hawái.</sinopsis>
+        <puntuacion_general>6.4</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3801">
+                <usuario>MemeLord</usuario>
+                <calificacion>7</calificacion>
+                <comentario>Jennifer Aniston y Adam Sandler salvan el día con su excelente dinámica de comedia.</comentario>
+                <fecha>2026-05-20</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="39">
+        <titulo>Godzilla Minus One</titulo>
+        <director>Takashi Yamazaki</director>
+        <año>2023</año>
+        <tipo>Acción</tipo>
+        <duracion>124 min</duracion>
+        <sinopsis>En el Japón devastado de la posguerra, una nueva crisis surge en forma de un monstruo gigante mutado por pruebas nucleares, llevando al país a un estado aún más crítico.</sinopsis>
+        <puntuacion_general>8.3</puntuacion_general>
+        <reseñas>
+            <reseña id_res="3901">
+                <usuario>Cinefilo</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Por fin una película donde los personajes humanos importan tanto o más que el monstruo destruyendo la ciudad. Impresionante.</comentario>
+                <fecha>2026-04-29</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="40">
+        <titulo>Django sin cadenas</titulo>
+        <director>Quentin Tarantino</director>
+        <año>2012</año>
+        <tipo>Drama</tipo>
+        <duracion>165 min</duracion>
+        <sinopsis>Con la ayuda de un cazador de recompensas alemán, un esclavo liberado se propone rescatar a su esposa del brutal propietario de una plantación en Mississippi.</sinopsis>
+        <puntuacion_general>8.5</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4001">
+                <usuario>Cinefilo</usuario>
+                <calificacion>10</calificacion>
+                <comentario>Estilo Tarantino puro: diálogos afilados, violencia estilizada y actuaciones brutales de DiCaprio y Waltz.</comentario>
+                <fecha>2026-03-11</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="41">
+        <titulo>Dos policías rebeldes</titulo>
+        <director>Michael Bay</director>
+        <año>1995</año>
+        <tipo>Acción</tipo>
+        <duracion>119 min</duracion>
+        <sinopsis>Dos detectives de Miami protegen a una testigo de un asesinato mientras investigan un caso de robo de heroína confiscada de la propia jefatura.</sinopsis>
+        <puntuacion_general>6.8</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4101">
+                <usuario>Nostalgico</usuario>
+                <calificacion>8</calificacion>
+                <comentario>La química inicial entre Will Smith y Martin Lawrence es fantástica. Acción veraniega noventera.</comentario>
+                <fecha>2026-01-25</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="42">
+        <titulo>Monster House: La casa de los sustos</titulo>
+        <director>Gil Kenan</director>
+        <año>2006</año>
+        <tipo>Animación</tipo>
+        <duracion>91 min</duracion>
+        <sinopsis>Tres adolescentes descubren que la casa de su vecino vecino es en realidad un monstruo viviente y terrorífico que respira y devora cosas.</sinopsis>
+        <puntuacion_general>6.7</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4201">
+                <usuario>AnimFan</usuario>
+                <calificacion>8</calificacion>
+                <comentario>Una gran opción de terror infantil con una atmósfera genial para Halloween.</comentario>
+                <fecha>2026-05-02</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="43">
+        <titulo>La noche del demonio</titulo>
+        <director>James Wan</director>
+        <año>2010</año>
+        <tipo>Terror</tipo>
+        <duracion>103 min</duracion>
+        <sinopsis>Una familia busca evitar que los espíritus malignos atrapen a su hijo, quien ha caído en un estado de coma comatoso inexplicable tras mudarse a una nueva casa.</sinopsis>
+        <puntuacion_general>6.8</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4301">
+                <usuario>GamerG</usuario>
+                <calificacion>8</calificacion>
+                <comentario>El diseño de sonido y los jumpscares del demonio rojo te dejan frío la primera vez que la ves.</comentario>
+                <fecha>2026-04-14</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="44">
+        <titulo>El conjuro 2</titulo>
+        <director>James Wan</director>
+        <año>2016</año>
+        <tipo>Terror</tipo>
+        <duracion>134 min</duracion>
+        <sinopsis>Ed y Lorraine Warren viajan al norte de Londres para ayudar a una madre soltera que cría a cuatro hijos sola en una casa plagada de espíritus sobrenaturales.</sinopsis>
+        <puntuacion_general>7.3</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4401">
+                <usuario>GamerG</usuario>
+                <calificacion>9</calificacion>
+                <comentario>La introducción de la Monja (Valak) es terror puro. James Wan sabe mover la cámara como nadie en este género.</comentario>
+                <fecha>2026-04-19</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="45">
+        <titulo>Pesadilla en la calle del infierno</titulo>
+        <director>Wes Craven</director>
+        <año>1984</año>
+        <tipo>Terror</tipo>
+        <duracion>91 min</duracion>
+        <sinopsis>Varios adolescentes son acosados y asesinados en sus sueños por Freddy Krueger, un asesino quemado con garras afiladas en los dedos.</sinopsis>
+        <puntuacion_general>7.4</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4501">
+                <usuario>Nostalgico</usuario>
+                <calificacion>10</calificacion>
+                <comentario>Un pilar del cine slasher. La idea de que no estás a salvo ni durmiendo es brillante.</comentario>
+                <fecha>2026-02-28</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="46">
+        <titulo>28 semanas después</titulo>
+        <director>Juan Carlos Fresnadillo</director>
+        <año>2007</año>
+        <tipo>Terror</tipo>
+        <duracion>100 min</duracion>
+        <sinopsis>Seis meses después de que el virus de la rabia diezmara Gran Bretaña, el ejército estadounidense ayuda a repoblar un área segura de Londres, pero el virus regresa.</sinopsis>
+        <puntuacion_general>6.9</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4601">
+                <usuario>SciFi_Fan</usuario>
+                <calificacion>8</calificacion>
+                <comentario>La escena de apertura en la granja es una de las introducciones más tensas y desesperantes del cine de infectados.</comentario>
+                <fecha>2026-03-02</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="47">
+        <titulo>[REC]</titulo>
+        <director>Jaume Balagueró</director>
+        <año>2007</año>
+        <tipo>Terror</tipo>
+        <duracion>78 min</duracion>
+        <sinopsis>Una joven reportera de televisión y su camarógrafo cubren la guardia de un grupo de bomberos, quedando atrapados dentro de un edificio en cuarentena por un brote violento.</sinopsis>
+        <puntuacion_general>7.4</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4701">
+                <usuario>Cinefilo</usuario>
+                <calificacion>9</calificacion>
+                <comentario>El formato de falso documental (found footage) está aprovechado al máximo. Angustiosa y claustrofóbica.</comentario>
+                <fecha>2026-05-10</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="48">
+        <titulo>Estación Zombie: Tren a Busan</titulo>
+        <director>Yeon Sang-ho</director>
+        <año>2016</año>
+        <tipo>Acción</tipo>
+        <duracion>118 min</duracion>
+        <sinopsis>Mientras un virus zombie estalla en Corea del Sur, un padre y su hija luchan por sobrevivir a bordo de un tren de alta velocidad que viaja de Seúl hacia Busan.</sinopsis>
+        <puntuacion_general>8.0</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4801">
+                <usuario>Cinefilo</usuario>
+                <calificacion>9</calificacion>
+                <comentario>Acción frenética mezclada con un tremendo drama familiar. Te hace preocuparte de verdad por los personajes.</comentario>
+                <fecha>2026-05-12</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="49">
+        <titulo>Y dónde está el fantasma 2</titulo>
+        <director>Michael Tiddes</director>
+        <año>2014</año>
+        <tipo>Comedia</tipo>
+        <duracion>86 min</duracion>
+        <sinopsis>Tras perder a su novia poseída en un accidente, Malcolm se muda a una nueva casa con su nueva familia, solo para descubrir que los eventos paranormales lo persiguen.</sinopsis>
+        <puntuacion_general>4.7</puntuacion_general>
+        <reseñas>
+            <reseña id_res="4901">
+                <usuario>MemeLord</usuario>
+                <calificacion>6</calificacion>
+                <comentario>Marlon Wayans parodiando El Conjuro e Sinister. Humor absurdo, grosero pero ideal si buscas apagar el cerebro un rato.</comentario>
+                <fecha>2026-04-20</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+
+    <pelicula id="50">
+        <titulo>Eterno resplandor de una mente sin recuerdos</titulo>
+        <director>Michel Gondry</director>
+        <año>2004</año>
+        <tipo>Drama</tipo>
+        <duracion>108 min</duracion>
+        <sinopsis>Cuando su relación se deteriora, una pareja se somete a un procedimiento médico experimental para borrar por completo todos los recuerdos que tienen el uno del otro.</sinopsis>
+        <puntuacion_general>8.3</puntuacion_general>
+        <reseñas>
+            <reseña id_res="5001">
+                <usuario>Cinefilo</usuario>
+                <calificacion>10</calificacion>
+                <comentario>Una de las historias de amor y desamor más honestas, dolorosas y hermosamente estructuradas del cine contemporáneo.</comentario>
+                <fecha>2026-05-25</fecha>
+            </reseña>
+        </reseñas>
+    </pelicula>
+</cartelera>
