@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XFILMS - Géneros</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .contenedor-filtros {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .btn-filtro {
+            background-color: #121212;
+            color: #ffffff;
+            border: 1px solid #2a2a2a;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .btn-filtro:hover, .btn-filtro.activo {
+            background-color: #570b9d;
+            border-color: #570b9d;
+            color: #000000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>XMovies</h1>
+        <nav>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="buscar.html"><button>Buscar</button></a>
+            <a href="generos.html"><button style="background: #570b9d; color: black; border-color: #570b9d;">Géneros</button></a>
+            <a href="top10.html"><button>Top 10</button></a>
+            <a href="historico.html"><button>Histórico</button></a>
+            <a href="acerca.html"><button>Estadísticas</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Explorar por Categoría</h2>
+        
+        <div id="botones-generos" class="contenedor-filtros">
+            <button class="btn-filtro activo" onclick="filtrarPorGenero('Todos', this)">Todos</button>
+        </div>
+
+        <div id="contenedor-peliculas" class="grid-peliculas">
+            <p>Clasificando cartelera...</p>
+        </div>
+    </main>
+
+    <script>
+        let peliculasNodos = [];
+
+        async function cargarGeneros() {
+            try {
+                const respuesta = await fetch('peliculas.xml');
+                const textoXML = await responseText = await respuesta.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(textoXML, "text/xml");
+                
+                peliculasNodos = Array.from(xml.getElementsByTagName("pelicula"));
+                
+                const generosSet = new Set();
+                peliculasNodos.forEach(p => {
+                    const tipo = p.getElementsByTagName("tipo")[0].textContent.trim();
+                    generosSet.add(tipo);
+                });
+
+                const contenedorBotones = document.getElementById("botones-generos");
+                generosSet.forEach(genero => {
+                    const boton = document.createElement("button");
+                    boton.className = "btn-filtro";
+                    boton.textContent = genero;
+                    boton.onclick = function() { filtrarPorGenero(genero, this); };
+                    contenedorBotones.appendChild(boton);
+                });
+
+                mostrarCatalogo(peliculasNodos);
+
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        function mostrarCatalogo(lista) {
+            const contenedor = document.getElementById("contenedor-peliculas");
+            let htmlContenido = "";
+
+            lista.forEach(pelicula => {
+                const id = pelicula.getAttribute("id");
+                const titulo = pelicula.getElementsByTagName("titulo")[0].textContent;
+                const director = pelicula.getElementsByTagName("director")[0].textContent;
+                const año = pelicula.getElementsByTagName("año")[0].textContent;
+                const tipo = pelicula.getElementsByTagName("tipo")[0].textContent;
+                const rating = pelicula.getElementsByTagName("puntuacion_general")[0].textContent;
+
+                htmlContenido += `
+                    <div class="tarjeta-pelicula">
+                        <div>
+                            <h3 class="titulo-peli">${titulo}</h3>
+                            <p class="info-peli"><strong>Año:</strong> ${año}</p>
+                            <p class="info-peli"><strong>Género:</strong> ${tipo}</p>
+                            <p class="info-peli"><strong>Director:</strong> ${director}</p>
+                        </div>
+                        <div>
+                            <div class="rating-peli">★ ${rating}</div>
+                            <a class="btn-ver" href="detalle.html?id=${id}">Ver Ficha</a>
+                        </div>
+                    </div>
+                `;
+            });
+
+            contenedor.innerHTML = htmlContenido;
+        }
+
+        function filtrarPorGenero(genero, botonSeleccionado) {
+            const botones = document.getElementsByClassName("btn-filtro");
+            for (let b of botones) {
+                b.classList.remove("activo");
+            }
+            botonSeleccionado.classList.add("activo");
+
+            if (genero === 'Todos') {
+                mostrarCatalogo(peliculasNodos);
+            } else {
+                const filtradas = peliculasNodos.filter(p => p.getElementsByTagName("tipo")[0].textContent.trim() === genero);
+                mostrarCatalogo(filtradas);
+            }
+        }
+
+        window.onload = cargarGeneros;
+    </script>
+</body>
+</html>

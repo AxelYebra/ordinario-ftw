@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XFILMS - Buscar</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .barra-busqueda {
+            width: 100%;
+            max-width: 500px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            background-color: #121212;
+            border: 2px solid #570b9d;
+            border-radius: 25px;
+            color: #ffffff;
+            margin-bottom: 30px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .barra-busqueda:focus {
+            box-shadow: 0 0 10px #570b9d;
+        }
+        .contenedor-busqueda {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>XMovies</h1>
+        <nav>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="buscar.html"><button style="background: #570b9d; color: black; border-color: #570b9d;">Buscar</button></a>
+            <a href="generos.html"><button>Géneros</button></a>
+            <a href="top10.html"><button>Top 10</button></a>
+            <a href="historico.html"><button>Histórico</button></a>
+            <a href="acerca.html"><button>Estadísticas</button></a>
+        </nav>
+    </header>
+
+    <main class="contenedor-busqueda">
+        <h2>Buscador de Películas</h2>
+        <input type="text" id="input-buscar" class="barra-busqueda" placeholder="Busca por título o director...">
+        
+        <div id="contenedor-peliculas" class="grid-peliculas" style="width: 100%;">
+            <p>Cargando catálogo...</p>
+        </div>
+    </main>
+
+    <script>
+        let todasLasPeliculas = [];
+
+        async function inicializarBuscador() {
+            try {
+                const respuesta = await fetch('peliculas.xml');
+                const textoXML = await respuesta.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(textoXML, "text/xml");
+                
+                todasLasPeliculas = Array.from(xml.getElementsByTagName("pelicula"));
+                
+                mostrarPeliculas(todasLasPeliculas);
+
+                document.getElementById("input-buscar").addEventListener("input", filtrarPeliculas);
+
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        function mostrarPeliculas(lista) {
+            const contenedor = document.getElementById("contenedor-peliculas");
+            let htmlContenido = "";
+
+            if (lista.length === 0) {
+                contenedor.innerHTML = "<p style='color: #777; text-align: center; width: 100%; grid-column: 1/-1;'>No se encontraron películas que coincidan con tu búsqueda.</p>";
+                return;
+            }
+
+            lista.forEach(pelicula => {
+                const id = pelicula.getAttribute("id");
+                const titulo = pelicula.getElementsByTagName("titulo")[0].textContent;
+                const director = pelicula.getElementsByTagName("director")[0].textContent;
+                const año = pelicula.getElementsByTagName("año")[0].textContent;
+                const tipo = pelicula.getElementsByTagName("tipo")[0].textContent;
+                const rating = pelicula.getElementsByTagName("puntuacion_general")[0].textContent;
+
+                htmlContenido += `
+                    <div class="tarjeta-pelicula">
+                        <div>
+                            <h3 class="titulo-peli">${titulo}</h3>
+                            <p class="info-peli"><strong>Año:</strong> ${año}</p>
+                            <p class="info-peli"><strong>Género:</strong> ${tipo}</p>
+                            <p class="info-peli"><strong>Director:</strong> ${director}</p>
+                        </div>
+                        <div>
+                            <div class="rating-peli">★ ${rating}</div>
+                            <a class="btn-ver" href="detalle.html?id=${id}">Ver Ficha</a>
+                        </div>
+                    </div>
+                `;
+            });
+
+            contenedor.innerHTML = htmlContenido;
+        }
+
+        function filtrarPeliculas(evento) {
+            const textoBusqueda = evento.target.value.toLowerCase().trim();
+
+            const filtradas = todasLasPeliculas.filter(pelicula => {
+                const titulo = pelicula.getElementsByTagName("titulo")[0].textContent.toLowerCase();
+                const director = pelicula.getElementsByTagName("director")[0].textContent.toLowerCase();
+                return titulo.includes(textoBusqueda) || director.includes(textoBusqueda);
+            });
+
+            mostrarPeliculas(filtradas);
+        }
+
+        window.onload = inicializarBuscador;
+    </script>
+</body>
+</html>
