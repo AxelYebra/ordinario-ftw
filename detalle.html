@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Movie Reviews - Detalle</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .contenedor-detalle {
+            background-color: #121212;
+            border: 1px solid #2a2a2a;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .header-detalle {
+            border-bottom: 1px solid #570b9d;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .meta-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #ccc;
+        }
+        .meta-info strong {
+            color: #570b9d;
+        }
+        .sinopsis {
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+        .seccion-reseñas {
+            margin-top: 40px;
+        }
+        .seccion-reseñas h3 {
+            color: #570b9d;
+            border-bottom: 1px solid #2a2a2a;
+            padding-bottom: 10px;
+        }
+        .tarjeta-reseña {
+            background-color: #1a1a1a;
+            border-left: 4px solid #570b9d;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        .user-reseña {
+            font-weight: bold;
+            color: #d8b4fe;
+            margin-bottom: 5px;
+        }
+        .comentario-reseña {
+            font-style: italic;
+            color: #eee;
+            margin: 5px 0;
+        }
+        .fecha-reseña {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MovieXML dB</h1>
+        <nav>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="buscar.html"><button>Buscar</button></a>
+            <a href="generos.html"><button>Géneros</button></a>
+            <a href="top10.html"><button>Top 10</button></a>
+            <a href="historico.html"><button>Histórico</button></a>
+            <a href="acerca.html"><button>Estadísticas</button></a>
+        </nav>
+    </header>
+
+    <main id="contenido-dinamico">
+        <p>Cargando información de la película...</p>
+    </main>
+
+    <script>
+        async function cargarDetalle() {
+            try {
+                const parametros = new URLSearchParams(window.location.search);
+                const idPeli = parametros.get('id');
+
+                if (!idPeli) {
+                    document.getElementById("contenido-dinamico").innerHTML = "<p>No se especificó ninguna película.</p>";
+                    return;
+                }
+
+                const respuesta = await fetch('peliculas.xml');
+                const textoXML = await respuesta.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(textoXML, "text/xml");
+
+                const pelicula = xml.querySelector(`pelicula[id="${idPeli}"]`);
+
+                if (!pelicula) {
+                    document.getElementById("contenido-dinamico").innerHTML = "<p>Película no encontrada.</p>";
+                    return;
+                }
+
+                const titulo = pelicula.getElementsByTagName("titulo")[0].textContent;
+                const director = pelicula.getElementsByTagName("director")[0].textContent;
+                const año = pelicula.getElementsByTagName("año")[0].textContent;
+                const tipo = pelicula.getElementsByTagName("tipo")[0].textContent;
+                const duracion = pelicula.getElementsByTagName("duracion")[0].textContent;
+                const sinopsis = pelicula.getElementsByTagName("sinopsis")[0].textContent;
+                const rating = pelicula.getElementsByTagName("puntuacion_general")[0].textContent;
+
+                let reseñasHTML = "";
+                const reseñas = pelicula.getElementsByTagName("reseña");
+
+                if (reseñas.length > 0) {
+                    for (let j = 0; j < reseñas.length; j++) {
+                        const usuario = reseñas[j].getElementsByTagName("usuario")[0].textContent;
+                        const calificacion = reseñas[j].getElementsByTagName("calificacion")[0].textContent;
+                        const comentario = reseñas[j].getElementsByTagName("comentario")[0].textContent;
+                        const fecha = reseñas[j].getElementsByTagName("fecha")[0].textContent;
+
+                        reseñasHTML += `
+                            <div class="tarjeta-reseña">
+                                <div class="user-reseña">@${usuario} — ★ ${calificacion}/10</div>
+                                <div class="comentario-reseña">"${comentario}"</div>
+                                <div class="fecha-reseña">Publicado el: ${fecha}</div>
+                            </div>
+                        `;
+                    }
+                } else {
+                    reseñasHTML = "<p style='color: #777;'>Esta película aún no tiene reseñas de críticos.</p>";
+                }
+
+                document.getElementById("contenido-dinamico").innerHTML = `
+                    <div class="contenedor-detalle">
+                        <div class="header-detalle">
+                            <h2>${titulo}</h2>
+                            <div style="color: #d8b4fe; font-weight: bold; font-size: 1.3rem;">★ ${rating} / 10</div>
+                        </div>
+                        
+                        <div class="meta-info">
+                            <div><strong>Director:</strong> ${director}</div>
+                            <div><strong>Año:</strong> ${año}</div>
+                            <div><strong>Género:</strong> ${tipo}</div>
+                            <div><strong>Duración:</strong> ${duracion}</div>
+                        </div>
+
+                        <div class="sinopsis">
+                            <h3>Sinopsis</h3>
+                            <p>${sinopsis}</p>
+                        </div>
+
+                        <div class="seccion-reseñas">
+                            <h3>Reseñas de Usuarios</h3>
+                            ${reseñasHTML}
+                        </div>
+                    </div>
+                `;
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById("contenido-dinamico").innerHTML = "<p style='color: red;'>Error al cargar los detalles.</p>";
+            }
+        }
+
+        window.onload = cargarDetalle;
+    </script>
+</body>
+</html>
