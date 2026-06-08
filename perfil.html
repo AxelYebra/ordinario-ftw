@@ -53,15 +53,19 @@
 
     <header>
         <h1>XMovies</h1>
-        <nav>
-            <a href="index.html"><button>Inicio</button></a>
-            <a href="buscar.html"><button>Buscar</button></a>
-            <a href="generos.html"><button>Géneros</button></a>
-            <a href="top10.html"><button>Top 10</button></a>
-            <a href="historico.html"><button>Histórico</button></a>
-            <a href="acerca.html"><button>Estadísticas</button></a>
-        </nav>
+        <nav style="display: flex; gap: 15px; justify-content: flex-end; padding: 10px;">
+            <a href="index.html" style="color: white; text-decoration: none; padding: 8px 16px; background-color: #1a1a1a; border-radius: 4px;">Inicio</a>
+            <a href="buscar.html" style="color: white; text-decoration: none; padding: 8px 16px; background-color: #1a1a1a; border-radius: 4px;">Buscar</a>
+            <a href="generos.html" style="color: white; text-decoration: none; padding: 8px 16px; background-color: #1a1a1a; border-radius: 4px;">Géneros</a>
+            <a href="top10.html" style="color: white; text-decoration: none; padding: 8px 16px; background-color: #1a1a1a; border-radius: 4px; font-weight: bold;">Top 10</a>
+            <a href="historico.html" style="color: white; text-decoration: none; padding: 8px 16px; background-color: #1a1a1a; border-radius: 4px;">Histórico</a>
+            <a href="reseñas.html" style="color: white; text-decoration: none; padding: 8px 16px; background-color: #1a1a1a; border-radius: 4px;">Reseñas</a>
+            <a href="acerca.html" style="color: white; text-decoration: none; padding: 8px 16px; background-color: #1a1a1a; border-radius: 4px;">Estadísticas</a>
+            <a href="perfil.html" style="color: white; text-decoration: none; padding: 8px 16px; background-color: #1a1a1a; border-radius: 4px; border: 1px solid #570b9d;">👤 Mi Perfil</a>
+</nav>
     </header>
+
+    
 
     <main>
         <div class="contenedor-perfil">
@@ -73,6 +77,49 @@
             </div>
             <a href="reseñas.html" class="btn-perfil">Mis Reseñas Escritas</a>
         </div>
+        <section style="max-width: 600px; margin: 40px auto; padding: 25px; background-color: #0c0c0c; border: 1px solid #222; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+            <h3 style="color: #570b9d; margin-top: 0; margin-bottom: 20px; font-size: 1.4rem;">Preferencias de la Cuenta</h3>
+    
+            <form id="form-perfil" onsubmit="alert('Preferencia guardada'); return false;" style="display: flex; flex-direction: column; gap: 20px;">
+
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="pass-usuario" style="color: #ccc; font-size: 0.95rem; font-weight: bold;">Clave de Acceso (Token):</label>
+                    <input type="password" id="pass-usuario" value="Axel12345" style="background-color: #1a1a1a; color: white; padding: 10px; border-radius: 4px; border: 1px solid #2d2d3d;" required>
+
+                <fieldset style="border: 1px solid #2d2d3d; border-radius: 4px; padding: 15px; color: #ccc;">
+                    <legend style="color: #570b9d; padding: 0 10px; font-weight: bold;">Notificaciones por Correo</legend>
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 5px;">
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                            <input type="checkbox" name="alertas" value="criticas" checked style="accent-color: #570b9d;">
+                            Nuevas reseñas de mis películas favoritas
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                            <input type="checkbox" name="alertas" value="semanal" style="accent-color: #570b9d;">
+                            Resumen mensual del Top 10 global
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset style="border: 1px solid #2d2d3d; border-radius: 4px; padding: 15px; color: #ccc;">
+                    <legend style="color: #570b9d; padding: 0 10px; font-weight: bold;">Tema Visual de la Interfaz</legend>
+                    <div style="display: flex; gap: 20px; margin-top: 5px;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="radio" name="tema" value="dark" checked style="accent-color: #570b9d;">
+                            XMovies Dark (#570b9d)
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="radio" name="tema" value="amoled" style="accent-color: #570b9d;">
+                            Negro Puro (AMOLED)
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" style="background-color: #570b9d; color: white; border: none; padding: 12px; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 1rem; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#701aed'" onmouseout="this.style.backgroundColor='#570b9d'">
+                    Guardar Configuración
+                </button>
+
+            </form>
+        </section>
     </main>
     <script src="cerebro.js"></script>
 </body>

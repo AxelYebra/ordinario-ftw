@@ -255,48 +255,112 @@ function filtrarPorGenero(genero, botonSeleccionado) {
     }
 }
 
-async function cargarTop10() {
-    try {
-        const respuesta = await fetch('peliculas.xml');
-        const textoXML = await respuesta.text();
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(textoXML, "text/xml");
-        const peliculas = Array.from(xml.getElementsByTagName("pelicula"));
+function cargarTop10() {
+    fetch('peliculas.xml')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("No se pudo abrir el archivo peliculas.xml");
+            }
+            return response.text();
+        })
+        .then(str => {
+            const parser = new DOMParser();
+            const miXML = parser.parseFromString(str, "text/xml");
+            
+            const peliculas = miXML.getElementsByTagName("pelicula");
+            if (!peliculas || peliculas.length === 0) return;
+            
+            let listaPeliculas = [];
 
-        peliculas.sort((a, b) => {
-            const ratingA = parseFloat(a.getElementsByTagName("puntuacion_general")[0].textContent);
-            const ratingB = parseFloat(b.getElementsByTagName("puntuacion_general")[0].textContent);
-            return ratingB - ratingA;
-        });
+            for (let i = 0; i < peliculas.length; i++) {
+                const id = peliculas[i].getAttribute("id") || i;
+                
+                const tagTitulo = peliculas[i].getElementsByTagName("titulo")[0];
+                const titulo = tagTitulo ? tagTitulo.textContent : "Película sin título";
+                
+                const tagDirector = peliculas[i].getElementsByTagName("director")[0];
+                const director = tagDirector ? tagDirector.textContent : "Desconocido";
+                
+                const tagAño = peliculas[i].getElementsByTagName("año")[0];
+                const año = tagAño ? tagAño.textContent : "-";
+                
+                const tagTipo = peliculas[i].getElementsByTagName("tipo")[0];
+                const tipo = tagTipo ? tagTipo.textContent : "General";
+                
+                const tagRating = peliculas[i].getElementsByTagName("puntuacion_general")[0];
+                const rating = tagRating ? parseFloat(tagRating.textContent) : 0.0;
+                
+                const tagPoster = peliculas[i].getElementsByTagName("poster")[0];
+                const poster = tagPoster ? tagPoster.textContent : "https://placehold.co/500x750/111/570b9d?text=🎬";
 
-        const top10 = peliculas.slice(0, 10);
-        const contenedor = document.getElementById("lista-top10");
-        let htmlContenido = "";
+                listaPeliculas.push({ id, titulo, director, año, tipo, rating, poster });
+            }
 
-        top10.forEach((pelicula, indice) => {
-            const id = pelicula.getAttribute("id");
-            const titulo = pelicula.getElementsByTagName("titulo")[0].textContent;
-            const director = pelicula.getElementsByTagName("director")[0].textContent;
-            const año = pelicula.getElementsByTagName("año")[0].textContent;
-            const tipo = pelicula.getElementsByTagName("tipo")[0].textContent;
-            const rating = pelicula.getElementsByTagName("puntuacion_general")[0].textContent;
+            listaPeliculas.sort((a, b) => b.rating - a.rating);
 
-            htmlContenido += `
-                <div class="fila-ranking">
-                    <div class="posicion">#${indice + 1}</div>
-                    <div class="detalles-ranking">
-                        <h3>${titulo}</h3>
-                        <span style="color: #aaa; font-size: 0.9rem;">${año} | ${tipo} | Dir: ${director}</span>
-                    </div>
-                    <div class="puntuacion-top">★ ${rating}</div>
-                    <a class="btn-ver" href="detalle.html?id=${id}" style="margin-top: 0; margin-left: 20px;">Ver Ficha</a>
+            const top10 = listaPeliculas.slice(0, 10);
+
+            let htmlTabla = `
+                <div style="overflow-x: auto; margin-top: 20px; padding: 0 10px;">
+                    <table style="width: 100%; border-collapse: collapse; background-color: #050505; color: #ffffff; font-family: sans-serif; min-width: 650px; border-radius: 8px; overflow: hidden;">
+                        <thead>
+                            <tr style="border-bottom: 3px solid #570b9d; text-align: left; background-color: #0c0c0c;">
+                                <th style="padding: 15px; font-size: 1rem; color: #570b9d; width: 80px; text-align: center;">Puesto</th>
+                                <th style="padding: 15px; font-size: 1rem; width: 70px;">Póster</th>
+                                <th style="padding: 15px; font-size: 1rem;">Título</th>
+                                <th style="padding: 15px; font-size: 1rem;">Director</th>
+                                <th style="padding: 15px; font-size: 1rem; width: 80px;">Año</th>
+                                <th style="padding: 15px; font-size: 1rem;">Género</th>
+                                <th style="padding: 15px; font-size: 1rem; text-align: center; color: #570b9d; width: 110px;">Rating</th>
+                                <th style="padding: 15px; font-size: 1rem; text-align: center; width: 100px;">Ficha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+
+            top10.forEach((pelicula, indice) => {
+                const puesto = indice + 1;
+                let podio = puesto;
+                if (puesto === 1) podio = "🥇 1";
+                if (puesto === 2) podio = "🥈 2";
+                if (puesto === 3) podio = "🥉 3";
+
+                htmlTabla += `
+                    <tr style="border-bottom: 1px solid #1a1a1a; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#0f0f15'" onmouseout="this.style.backgroundColor='transparent'">
+                        <td style="padding: 12px; text-align: center; font-weight: bold; color: #d8b4fe; font-size: 1.05rem;">${podio}</td>
+                        <td style="padding: 8px 12px;">
+                            <img src="${pelicula.poster}" alt="${pelicula.titulo}" style="width: 45px; height: 65px; object-fit: cover; border-radius: 4px; border: 1px solid #222;">
+                        </td>
+                        <td style="padding: 12px; font-weight: 500; color: #ffffff;">${pelicula.titulo}</td>
+                        <td style="padding: 12px; color: #cccccc; font-size: 0.95rem;">${pelicula.director}</td>
+                        <td style="padding: 12px; color: #999999; font-size: 0.95rem;">${pelicula.año}</td>
+                        <td style="padding: 12px; color: #999999;"><span style="background-color: #161622; color: #e2e8f0; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; border: 1px solid #2d2d3d;">${pelicula.tipo}</span></td>
+                        <td style="padding: 12px; text-align: center; font-weight: bold; color: #fbbf24; font-size: 1.1rem;">★ ${pelicula.rating.toFixed(1)}</td>
+                        <td style="padding: 12px; text-align: center;">
+                            <a href="detalle.html?id=${pelicula.id}" style="background-color: #570b9d; color: white; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-size: 0.85rem; font-weight: bold; display: inline-block; transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#701aed'" onmouseout="this.style.backgroundColor='#570b9d'">Ver</a>
+                        </td>
+                    </tr>
+                `;
+            });
+
+            htmlTabla += `
+                        </tbody>
+                    </table>
                 </div>
             `;
+
+            const contenedor = document.getElementById("contenido-dinamico") || document.getElementById("tabla-top10");
+            if (contenedor) {
+                contenedor.innerHTML = htmlTabla;
+            }
+        })
+        .catch(error => {
+            console.error("Error en Top 10:", error);
+            const contenedor = document.getElementById("contenido-dinamico") || document.getElementById("tabla-top10");
+            if (contenedor) {
+                contenedor.innerHTML = `<p style="color: red; text-align: center;">Error al cargar el Top 10 de películas.</p>`;
+            }
         });
-        contenedor.innerHTML = htmlContenido;
-    } catch (error) {
-        console.error(error);
-    }
 }
 
 async function cargarHistorial() {
