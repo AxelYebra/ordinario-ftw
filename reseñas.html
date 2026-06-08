@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XFILMS - Mis Reseñas</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .contenedor-reseñas {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .bloque-critica {
+            background-color: #121212;
+            border-left: 4px solid #570b9d;
+            border-top: 1px solid #2a2a2a;
+            border-right: 1px solid #2a2a2a;
+            border-bottom: 1px solid #2a2a2a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .titulo-critica {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+        }
+        .texto-critica {
+            font-style: italic;
+            color: #eee;
+            line-height: 1.5;
+        }
+        .info-critica {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>XMovies</h1>
+        <nav>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="perfil.html"><button style="background: #570b9d; color: black; border-color: #570b9d;">Volver al Perfil</button></a>
+        </nav>
+    </header>
+
+    <main class="contenedor-reseñas">
+        <h2>Mis Reseñas Críticas Publicadas</h2>
+        <div id="lista-mis-reseñas">
+            <p>Buscando tus reseñas en la base de datos...</p>
+        </div>
+    </main>
+
+    <script>
+        async function cargarMisReseñas() {
+            try {
+                const respuesta = await fetch('peliculas.xml');
+                const textoXML = await respuesta.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(textoXML, "text/xml");
+
+                const peliculas = xml.getElementsByTagName("pelicula");
+                const contenedor = document.getElementById("lista-mis-reseñas");
+                let htmlContenido = "";
+
+                for (let i = 0; i < peliculas.length; i++) {
+                    const tituloPeli = peliculas[i].getElementsByTagName("titulo")[0].textContent;
+                    const reseñas = peliculas[i].getElementsByTagName("reseña");
+
+                    for (let j = 0; j < reseñas.length; j++) {
+                        const usuario = reseñas[j].getElementsByTagName("usuario")[0].textContent;
+                        
+                        if (usuario === "AxelYebra") {
+                            const calificacion = reseñas[j].getElementsByTagName("calificacion")[0].textContent;
+                            const comentario = reseñas[j].getElementsByTagName("comentario")[0].textContent;
+                            const fecha = reseñas[j].getElementsByTagName("fecha")[0].textContent;
+
+                            htmlContenido += `
+                                <div class="bloque-critica">
+                                    <h3 class="titulo-critica">${tituloPeli} — <span style="color: #570b9d;">★ ${calificacion}/10</span></h3>
+                                    <p class="texto-critica">"${comentario}"</p>
+                                    <div class="info-critica">Publicada el: ${fecha}</div>
+                                </div>
+                            `;
+                        }
+                    }
+                }
+
+                contenedor.innerHTML = htmlContenido || "<p style='color: #777;'>No se encontraron reseñas registradas bajo tu usuario todavía.</p>";
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById("lista-mis-reseñas").innerHTML = "<p style='color: red;'>Error al compilar las reseñas.</p>";
+            }
+        }
+
+        window.onload = cargarMisReseñas;
+    </script>
+</body>
+</html>

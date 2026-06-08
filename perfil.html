@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XFILMS - Perfil</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .contenedor-perfil {
+            background-color: #121212;
+            border: 1px solid #2a2a2a;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background-color: #570b9d;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #000000;
+            font-weight: bold;
+        }
+        .meta-perfil {
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+        .btn-perfil {
+            display: inline-block;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            border: 1px solid #570b9d;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn-perfil:hover {
+            background-color: #570b9d;
+            color: #000000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>XMovies</h1>
+        <nav>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="buscar.html"><button>Buscar</button></a>
+            <a href="generos.html"><button>Géneros</button></a>
+            <a href="top10.html"><button>Top 10</button></a>
+            <a href="historico.html"><button>Histórico</button></a>
+            <a href="acerca.html"><button>Estadísticas</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor-perfil">
+            <div class="avatar">A</div>
+            <h2>@AxelYebra</h2>
+            <div class="meta-perfil">
+                <p><strong>Rango:</strong> Crítico Platino</p>
+                <p><strong>Miembro desde:</strong> Junio 2026</p>
+            </div>
+            <a href="reseñas.html" class="btn-perfil">Mis Reseñas Escritas</a>
+        </div>
+    </main>
+
+</body>
+</html>
