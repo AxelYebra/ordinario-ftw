@@ -2,6 +2,7 @@
 <cartelera>
     <pelicula id="1">
         <titulo>Scott Pilgrim vs. The World</titulo>
+        <poster>https://imgs.search.brave.com/I7NyTrSGxsglF2CN-qH_If5tZHWNzeW49D8qcX8LeXE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL2lt/YWdlcy9nLy13Y0FB/T1N3OXpSbDFOLUYv/cy1sNDAwLndlYnA</poster>
         <director>Edgar Wright</director>
         <año>2010</año>
         <tipo>Comedia</tipo>
@@ -20,6 +21,7 @@
 
     <pelicula id="2">
         <titulo>La vida secreta de Walter Mitty</titulo>
+        <poster>https://imgs.search.brave.com/qLaa6RN_WVlRO_dl33H1vrTMS6LLeQQL8ITcAm-khC8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMTBf/NDIwL3BpY3R1cmVz/LzIxMC81OTEvMjEw/NTkxMzFfMjAxMzEx/MTkxNTQ5MTMwMTgu/anBn</poster>
         <director>Ben Stiller</director>
         <año>2013</año>
         <tipo>Drama</tipo>
@@ -38,6 +40,7 @@
 
     <pelicula id="3">
         <titulo>The Truman Show</titulo>
+        <poster>https://imgs.search.brave.com/Agg4a5t_ECY4ez8HurMphi5BTDS5hEFUJnYvpKTATuk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYW1h/bm9kZWxleHRyYW5q/ZXJvLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNy8wNS9j/YXJ0ZWwtZGUtZWwt/c2hvdy1kZS10cnVt/YW5fdGh1bWIuanBn/P3c9MjY5Jmg9Mzk4</poster>
         <director>Peter Weir</director>
         <año>1998</año>
         <tipo>Drama</tipo>
@@ -56,6 +59,7 @@
 
     <pelicula id="4">
         <titulo>Gran Torino</titulo>
+        <poster>https://imgs.search.brave.com/yt2DC5MgGqFqg9HXsu_EwmIJ__oqfZNtKXwa2V5zHWw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMi5hY3N0/YS5uZXQvcl8xMjgw/XzcyMC9tZWRpYXMv/bm1lZGlhLzE4LzY3/LzkwLzkzLzE5MDAy/MzA5LmpwZw</poster>
         <director>Clint Eastwood</director>
         <año>2008</año>
         <tipo>Drama</tipo>
@@ -74,6 +78,7 @@
 
     <pelicula id="5">
         <titulo>Rango</titulo>
+        <poster>https://imgs.search.brave.com/z7ukiBoHvssm--QKQFosFUGULMPKJt6jFU3oiNdkusE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMi5hY3N0/YS5uZXQvY18zMTBf/NDIwL3BpY3R1cmVz/LzE0LzA3LzI4LzEy/LzI3LzQ4MzgzOS5q/cGc</poster>
         <director>Gore Verbinski</director>
         <año>2011</año>
         <tipo>Animación</tipo>
@@ -92,6 +97,7 @@
 
     <pelicula id="6">
         <titulo>Megamente</titulo>
+        <poster>https://imgs.search.brave.com/x7vxxCINqV0psFzIHIYegB0EuTbJgv85evCH2_khvss/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMTBf/NDIwL21lZGlhcy9u/bWVkaWEvMTgvNzgv/MjQvOTUvMTk1MzQx/ODYuanBn</poster>
         <director>Tom McGrath</director>
         <año>2010</año>
         <tipo>Animación</tipo>
@@ -110,6 +116,7 @@
 
     <pelicula id="7">
         <titulo>El club de la pelea</titulo>
+        <poster>https://imgs.search.brave.com/1xslghpwyX0N5gi2my6TduyByqmj2bL1YPr6BP3jUZY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVwZXJ1LmNvbS9j/aW5lL3BvcnRhZGFz/L3BvcnRhZGE2NS5q/cGc</poster>
         <director>David Fincher</director>
         <año>1999</año>
         <tipo>Drama</tipo>
@@ -128,6 +135,7 @@
 
     <pelicula id="8">
         <titulo>Project Hail Mary</titulo>
+        <poster>https://imgs.search.brave.com/7whrBrt-ShW6yCFKqHBdz4Hzvsu5otohc9oGUlm5hdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waWNz/LmZpbG1hZmZpbml0/eS5jb20vcHJvamVj/dF9oYWlsX21hcnkt/MzY2NjU3NTA5LW1t/ZWQuanBn</poster>
         <director>Drew Goddard</director>
         <año>2026</año>
         <tipo>Ciencia Ficción</tipo>
@@ -146,6 +154,7 @@
 
     <pelicula id="9">
         <titulo>Five Nights at Freddy's</titulo>
+        <poster>https://imgs.search.brave.com/qUr0_cTRkfOR-RCKlNZ-A4QiMPlJV49_A3jSEF-3SOs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/XzcxMjE5My1NTE03/MTQ5NjUyOTgwMF8w/OTIwMjMtVi53ZWJw</poster>
         <director>Emma Tammi</director>
         <año>2023</año>
         <tipo>Terror</tipo>
@@ -164,6 +173,7 @@
 
     <pelicula id="10">
         <titulo>Los Increíbles</titulo>
+        <poster>https://imgs.search.brave.com/Y_iHGmir3Y--_-38u24UIsmssueUkOSVtMB6oyX7xWA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMTBf/NDIwL21lZGlhcy9u/bWVkaWEvMTgvODkv/ODcvODYvMjAwNzA5/NDcuanBn</poster>
         <director>Brad Bird</director>
         <año>2004</año>
         <tipo>Animación</tipo>
@@ -182,6 +192,7 @@
 
     <pelicula id="11">
         <titulo>Lluvia de hamburguesas</titulo>
+        <poster>https://imgs.search.brave.com/pklq6aIvIxzxyyprI5yFOn53dVhHdahQq4j26jOzp4I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2Rv/YmxhamUvaW1hZ2Vz/LzAvMGYvTExVVklB/X0RFX0hBTUJVUkdV/RVNBUy5qcGcvcmV2/aXNpb24vbGF0ZXN0/L3NjYWxlLXRvLXdp/ZHRoLWRvd24vMjY4/P2NiPTIwMTAwNjE1/MDA0NTUzJnBhdGgt/cHJlZml4PWVz</poster>
         <director>Phil Lord</director>
         <año>2009</año>
         <tipo>Animación</tipo>
@@ -200,6 +211,7 @@
 
     <pelicula id="12">
         <titulo>La cosa</titulo>
+        <poster>https://imgs.search.brave.com/UAPsJoKKtTLJrO-U95NryeZUqnN5rptodnu1lHU9RvA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL3Ro/dW1icy9pbWFnZXMv/Zy9-b0lBQU9TdzdM/ZGwteW5jL3MtbDMw/MC5qcGc</poster>
         <director>John Carpenter</director>
         <año>1982</año>
         <tipo>Terror</tipo>
@@ -218,6 +230,7 @@
 
     <pelicula id="13">
         <titulo>Depredador</titulo>
+        <poster>https://imgs.search.brave.com/F18oiR3dTz4645wldjENr-mipGavICsFWdBl1yJwlsE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL3Ro/dW1icy9pbWFnZXMv/Zy93dDhBQU9TdzZP/RmpuSEJhL3MtbDk2/MC53ZWJw</poster>
         <director>John McTiernan</director>
         <año>1987</año>
         <tipo>Acción</tipo>
@@ -236,6 +249,7 @@
 
     <pelicula id="14">
         <titulo>Jeepers Creepers</titulo>
+        <poster>https://imgs.search.brave.com/OcAtkRwGkPmXPgnF4A2u6kNbS0-bj4IX14BhJLHxZ2g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMTBf/NDIwL21lZGlhcy9u/bWVkaWEvMTgvOTAv/MTIvODgvMjAwODIw/MzAuanBn</poster>
         <director>Victor Salva</director>
         <año>2001</año>
         <tipo>Terror</tipo>
@@ -254,6 +268,7 @@
 
     <pelicula id="15">
         <titulo>Son como niños</titulo>
+        <poster>https://imgs.search.brave.com/6xQVRHtyXOQ2_Sq-XNTfqhvrD89nfpivV0a-NTukfkM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9teC53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMTBf/NDIwL3BpY3R1cmVz/LzIwLzA3LzA2LzIy/LzE4LzM0MTA1MzMu/anBn</poster>
         <director>Dennis Dugan</director>
         <año>2010</año>
         <tipo>Comedia</tipo>
@@ -272,6 +287,7 @@
 
     <pelicula id="16">
         <titulo>Norbit</titulo>
+        <poster>https://imgs.search.brave.com/sxHe0Mtd2Tto06Z9b_824_P8ALeaiCTfsYQIVOkToCE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMTBf/NDIwL21lZGlhcy9u/bWVkaWEvMTgvNjkv/NTQvNjAvMjAwNTYy/NzMuanBn</poster>
         <director>Brian Robbins</director>
         <año>2007</año>
         <tipo>Comedia</tipo>
@@ -290,6 +306,7 @@
 
     <pelicula id="17">
         <titulo>Iron Man</titulo>
+        <poster>https://imgs.search.brave.com/9SDvedMCwVyoblnPqYhk7SC3g-qiIjIe9s6WI_Y91OI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMy5hY3N0/YS5uZXQvcl8xMjgw/XzcyMC9tZWRpYXMv/bm1lZGlhLzE4LzY2/LzY0LzAxLzIwMTY4/NzI0LmpwZw</poster>
         <director>Jon Favreau</director>
         <año>2008</año>
         <tipo>Acción</tipo>
@@ -308,6 +325,7 @@
 
     <pelicula id="18">
         <titulo>The Batman</titulo>
+        <poster>https://imgs.search.brave.com/MYe0RPt6rt1GxG77XFs1sMJH3iCXOWrHQuxjYT70jmY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb3Np/bnRlcnJvZ2FudGVz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wMy90aGUt/YmF0bWFuLXBlbGlj/dWxhLWNhcnRlbC01/NDB4ODAwLmpwZw</poster>
         <director>Matt Reeves</director>
         <año>2022</año>
         <tipo>Acción</tipo>
@@ -326,6 +344,7 @@
 
     <pelicula id="19">
         <titulo>The Lego Movie</titulo>
+        <poster>https://imgs.search.brave.com/d4zopzLGjr7E-n5IcYk4_rMpFVI-BJlf-F8bTJE9O1s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMTBf/NDIwL3BpY3R1cmVz/LzEzLzEyLzE2LzEz/LzI4LzI5NDIzMS5q/cGc</poster>
         <director>Phil Lord</director>
         <año>2014</año>
         <tipo>Animación</tipo>
@@ -344,6 +363,7 @@
 
     <pelicula id="20">
         <titulo>Scary Movie</titulo>
+        <poster>https://imgs.search.brave.com/H92gh1nthVtaSJH5cY4CJKtBLCkby5dqMdhatFsae8k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMi5hY3N0/YS5uZXQvcl8xMjgw/XzcyMC9waWN0dXJl/cy8xNC8wMy8wNi8w/OS80NC8yODMxMTEu/anBn</poster>
         <director>Keenen Ivory Wayans</director>
         <año>2000</año>
         <tipo>Comedia</tipo>
@@ -362,6 +382,7 @@
 
     <pelicula id="21">
         <titulo>Oppenheimer</titulo>
+        <poster>https://imgs.search.brave.com/PUUcoNmdeKN9OqZZdo8joc94Sdjs98Hs_ncoPrzTZUU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMi5hY3N0/YS5uZXQvY18zMTBf/NDIwL3BpY3R1cmVz/LzIzLzA1LzI1LzEz/LzQxLzE4MzU0MzEu/anBn</poster>
         <director>Christopher Nolan</director>
         <año>2023</año>
         <tipo>Drama</tipo>
@@ -380,6 +401,7 @@
 
     <pelicula id="22">
         <titulo>Kung Fu Panda</titulo>
+        <poster>https://imgs.search.brave.com/Yyt7Qg5F0aunoAZp0dX0suS7ObYrPhThzi6ahcjfHiw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMi5hY3N0/YS5uZXQvcl8xMjgw/XzcyMC9pbWcvODkv/NmUvODk2ZThkODU2/MTliMjFhNGUyZTg1/ZjhhOGM2MDI4YTUu/anBn</poster>
         <director>John Stevenson</director>
         <año>2008</año>
         <tipo>Animación</tipo>
@@ -398,6 +420,7 @@
 
     <pelicula id="23">
         <titulo>Amores Perros</titulo>
+        <poster>https://imgs.search.brave.com/rPdoLRGPSFo5J96yCuKb5I047IKPd-RRpPXoyohfZcw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9hbW9y/ZXMtcGVycm9zLXBl/bGljdWxhLXBvc3Rl/ci02ODMzYTA3YjZm/Y2FjLmpwZz9yZXNp/emU9OTgwOio</poster>
         <director>Alejandro González Iñárritu</director>
         <año>2000</año>
         <tipo>Drama</tipo>
@@ -416,6 +439,7 @@
 
     <pelicula id="24">
         <titulo>La delgada línea amarilla</titulo>
+        <poster>https://imgs.search.brave.com/F4lJI7tLZX7DO6yu7J4AL7XnwhWAN8lXlA2831oLKfs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMTBf/NDIwL3BpY3R1cmVz/LzE4LzAzLzIwLzEw/LzM1LzQ5NzU0NzMu/anBn</poster>
         <director>Celso R. García</director>
         <año>2015</año>
         <tipo>Drama</tipo>
@@ -434,6 +458,7 @@
 
     <pelicula id="25">
         <titulo>Nacho Libre</titulo>
+        <poster>https://imgs.search.brave.com/vFrEB8DVaHoZlvVud6zA5_Z9LSk2IzpV6omHKZRVMUA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9teC53/ZWIuaW1nMi5hY3N0/YS5uZXQvY18zMTBf/NDIwL3BpY3R1cmVz/L2J6cC8wNC8xMDg4/ODguanBn</poster>
         <director>Jared Hess</director>
         <año>2006</año>
         <tipo>Comedia</tipo>
@@ -452,6 +477,7 @@
 
     <pelicula id="26">
         <titulo>Ciudad de Dios</titulo>
+        <poster>https://imgs.search.brave.com/XloMNDhcU936KasKPzavoE-TMsiC4xHNPMJvf0dK_To/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lcy53/ZWIuaW1nMi5hY3N0/YS5uZXQvY18zMTBf/NDIwL21lZGlhcy9u/bWVkaWEvMTgvNjgv/MDkvMDAvMjAwNzE4/NjMuanBn</poster>
         <director>Fernando Meirelles</director>
         <año>2002</año>
         <tipo>Drama</tipo>
@@ -470,6 +496,7 @@
 
     <pelicula id="27">
         <titulo>Spider-Man 2</titulo>
+        <poster>https://imgs.search.brave.com/fEAUeO6lpAq-azhda9hHE3U-9UuCZGcMzWr4d_b13eA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL2lt/YWdlcy9nL0ZXQUFB/ZVN3Z1hkcDBXZ3Mv/cy1sOTYwLndlYnA</poster>
         <director>Sam Raimi</director>
         <año>2004</año>
         <tipo>Acción</tipo>
@@ -488,6 +515,7 @@
 
     <pelicula id="28">
         <titulo>Click</titulo>
+        <poster>https://imgs.search.brave.com/G-RKwF4RDytJv6BIvOwKGbH8yCbH-ecw_BijdOcmQzE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXN0/ZXJpbWFnZXMubW92/aWVwb3N0ZXJzaG9w/LmNvbS9jbGljay1t/b3ZpZS1wb3N0ZXIt/MjAwNi0xMDEwMzY2/MjU5LmpwZw</poster>
         <director>Frank Coraci</director>
         <año>2006</año>
         <tipo>Comedia</tipo>
@@ -506,6 +534,7 @@
 
     <pelicula id="29">
         <titulo>No se aceptan devoluciones</titulo>
+        <poster>https://imgs.search.brave.com/LxvKKqiP97qKyM48PMR3otDiKWVFrP7PYG-1YY9f4C8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFTNWd0a0x6T0wu/anBn</poster>
         <director>Eugenio Derbez</director>
         <año>2013</año>
         <tipo>Comedia</tipo>
@@ -524,6 +553,7 @@
 
     <pelicula id="30">
         <titulo>Scooby-Doo</titulo>
+        <poster>https://imgs.search.brave.com/RMXC-p2RkuUZXRp0igpkeTHyG3IjeDxZ5424konDVKE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/YW55b25lLWV2ZXIt/bm90aWNlZC10aGF0/LWphbWVzLWd1bm5z/LXNjb29ieS1kb28t/MjAwMi1pcy1hLXYw/LXhsNzBmcXJjOTFn/ZjEuanBlZz93aWR0/aD02NDAmY3JvcD1z/bWFydCZhdXRvPXdl/YnAmcz1lMGZhMTY1/ZjAzZGRlMzJhOGY4/MzZlNjg3Yjc1MDA5/NmRlZmRlNmYx</poster>
         <director>Raja Gosnell</director>
         <año>2002</año>
         <tipo>Comedia</tipo>
@@ -542,6 +572,7 @@
 
     <pelicula id="31">
         <titulo>Guardianes de la Galaxia</titulo>
+        <poster>https://imgs.search.brave.com/zbMCp17YrMB5o0lteCisbe6jroevpaxsF0l4pwQWzEQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QllXSTBOVE5s/TjJNdE1XUmpOeTAw/TTJRd0xXRmxaVGd0/WlRsa01UWmlZVFUy/TlRrMVhrRXlYa0Zx/Y0djQC5qcGc</poster>
         <director>James Gunn</director>
         <año>2014</año>
         <tipo>Ciencia Ficción</tipo>
@@ -560,6 +591,7 @@
 
     <pelicula id="32">
         <titulo>Hombres de Negro</titulo>
+        <poster>https://imgs.search.brave.com/zmkxE4YFLSGN1Zm9xw9w4G7HMtcnruftRT3Y2baFKb0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFzS1g0ZnlsMEwu/anBn</poster>
         <director>Barry Sonnenfeld</director>
         <año>1997</año>
         <tipo>Ciencia Ficción</tipo>
@@ -578,6 +610,7 @@
 
     <pelicula id="33">
         <titulo>The Matrix</titulo>
+        <poster>https://imgs.search.brave.com/tmMR7-6h1fIoQnz7RSqrMcNLxSjdoJXilJtwq0NmtDY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9maWxt/YXJ0Z2FsbGVyeS5j/b20vY2RuL3Nob3Av/cHJvZHVjdHMvVGhl/LU1hdHJpeC1WaW50/YWdlLU1vdmllLVBv/c3Rlci1PcmlnaW5h/bF9iMGVjOTg5My5q/cGc_dj0xNzcxOTMz/MzY5JndpZHRoPTEy/MDA</poster>
         <director>Lana Wachowski</director>
         <año>1999</año>
         <tipo>Ciencia Ficción</tipo>
@@ -596,6 +629,7 @@
 
     <pelicula id="34">
         <titulo>Van Helsing</titulo>
+        <poster>https://imgs.search.brave.com/mOnzwRxwizCIql1zphOhdvALUM9zR4mkp3trlIQ-8M0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXN0/ZXJpbWFnZXMubW92/aWVwb3N0ZXJzaG9w/LmNvbS92YW4taGVs/c2luZy1tb3ZpZS1w/b3N0ZXItMjAwNC0x/MDEwNjc4NDcwLmpw/Zw</poster>
         <director>Stephen Sommers</director>
         <año>2004</año>
         <tipo>Terror</tipo>
@@ -614,6 +648,7 @@
 
     <pelicula id="35">
         <titulo>Coraline y la puerta secreta</titulo>
+        <poster>https://imgs.search.brave.com/S8zL50kUMQCamk3lS0uO9jtGxhdpQdAG-pq_ansyP4o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aGVtb3ZpZWRi/Lm9yZy90L3AvdzIy/MF9hbmRfaDMzMF9m/YWNlLzhUYkx2dUtT/RE5iQXJpQkFKeDJS/WmxVR052by5qcGc</poster>
         <director>Henry Selick</director>
         <año>2009</año>
         <tipo>Animación</tipo>
@@ -632,6 +667,7 @@
 
     <pelicula id="36">
         <titulo>El extraño mundo de Jack</titulo>
+        <poster>https://imgs.search.brave.com/kDwt71q7ESca6ugzY3vysu08t-KWKX3uA1lW4Mm3NP4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9teC53/ZWIuaW1nMi5hY3N0/YS5uZXQvcl8xMjgw/XzcyMC9pbWcvOWYv/N2MvOWY3Y2I5ODU3/MWU4YTc1MzQxMWZi/YTVjOWExMGNlNTQu/anBn</poster>
         <director>Henry Selick</director>
         <año>1993</año>
         <tipo>Animación</tipo>
@@ -650,6 +686,7 @@
 
     <pelicula id="37">
         <titulo>Qué pasó ayer?</titulo>
+        <poster>https://imgs.search.brave.com/kYXwMHcTol_xIGKHnFCxMdheTdfX61gDxjO9Ghz7rQM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9XWTBZekUx/T1RZdE9UWmtaQzAw/WVRWaExUa3daalF0/WVRRd05tRXhObVV4/WVRVNFhrRXlYa0Zx/Y0djQC5qcGc</poster>
         <director>Todd Phillips</director>
         <año>2009</año>
         <tipo>Comedia</tipo>
@@ -668,6 +705,7 @@
 
     <pelicula id="38">
         <titulo>Una esposa de mentira</titulo>
+        <poster>https://imgs.search.brave.com/hdLf7Va_Wsb6A1Zw1qnnkhZoCNVbSDj0yubGqgFVSjg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9teC53/ZWIuaW1nMi5hY3N0/YS5uZXQvcl8xMjgw/XzcyMC9waWN0dXJl/cy8yMS8wOS8yOC8y/MC8xOC8zNDMzNTk1/LmpwZw</poster>
         <director>Dennis Dugan</director>
         <año>2011</año>
         <tipo>Comedia</tipo>
@@ -686,6 +724,7 @@
 
     <pelicula id="39">
         <titulo>Godzilla Minus One</titulo>
+        <poster>https://imgs.search.brave.com/Rlj1Ci44dsmnvl5t3sPzrzgNL9sNzlw6WyFP6qXZueo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF83/Mzg3NTQtTUxNNzA1/Njc5NjczNjlfMDcy/MDIzLU8tcG9zdGVy/LWRlLWdvZHppbGxh/LW1pbnVzLW9uZS0y/MDIzLndlYnA</poster>
         <director>Takashi Yamazaki</director>
         <año>2023</año>
         <tipo>Acción</tipo>
@@ -704,6 +743,7 @@
 
     <pelicula id="40">
         <titulo>Django sin cadenas</titulo>
+        <poster>https://imgs.search.brave.com/703TOr5p6eB9psrKFS7NHTd_GqyxYpqNLzWbICvMl7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waWNz/LmZpbG1hZmZpbml0/eS5jb20vZGphbmdv/X3VuY2hhaW5lZC0z/MDAxMzI1MjktbGFy/Z2UuanBn</poster>
         <director>Quentin Tarantino</director>
         <año>2012</año>
         <tipo>Drama</tipo>
@@ -721,7 +761,8 @@
     </pelicula>
 
     <pelicula id="41">
-        <titulo>Dos policías rebeldes</titulo>
+        <titulo>Bad Boys</titulo>
+        <poster>https://imgs.search.brave.com/dER1NSwJSCmAtjWRerceKrLyS6MCJCvFwEA2q73u0wI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aGVtb3ZpZWRi/Lm9yZy90L3AvdzIy/MF9hbmRfaDMzMF9m/YWNlLzU1Y0JjZ1dN/R2ZLYWVlbkdIYnkz/d3IybExXSy5qcGc</poster>
         <director>Michael Bay</director>
         <año>1995</año>
         <tipo>Acción</tipo>
@@ -740,6 +781,7 @@
 
     <pelicula id="42">
         <titulo>Monster House: La casa de los sustos</titulo>
+        <poster>https://imgs.search.brave.com/fUPhsnymcbEVomXW3nt8ZyjfDrYTf8PGltkjgBdnJE4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzM3LzQ2/L2IyLzM3NDZiMjhk/YTczMzcwNDcwNWJj/YmRjMTFhMTI2YWZl/LmpwZw</poster>
         <director>Gil Kenan</director>
         <año>2006</año>
         <tipo>Animación</tipo>
@@ -758,6 +800,7 @@
 
     <pelicula id="43">
         <titulo>La noche del demonio</titulo>
+        <poster>https://imgs.search.brave.com/csTVLTCnJqMBHbntZfPUYm9cTNYdHq9BLRznxtEMXMw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aGVtb3ZpZWRi/Lm9yZy90L3AvdzIy/MF9hbmRfaDMzMF9m/YWNlLzJWZGIzRnIx/NHh2bGVmS0hLYTN1/UFBXemo5cy5qcGc</poster>
         <director>James Wan</director>
         <año>2010</año>
         <tipo>Terror</tipo>
@@ -776,6 +819,7 @@
 
     <pelicula id="44">
         <titulo>El conjuro 2</titulo>
+        <poster>https://imgs.search.brave.com/zR2LhrfZ9Qx3VtmrrJnAOqUciEc9HIZlnB2Vuy5Tni8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzgwL2Nm/L2I4LzgwY2ZiODll/OTU4NmQwNjhiMzIy/YWExN2JkZTZlYjhi/LmpwZw</poster>
         <director>James Wan</director>
         <año>2016</año>
         <tipo>Terror</tipo>
@@ -794,6 +838,7 @@
 
     <pelicula id="45">
         <titulo>Pesadilla en la calle del infierno</titulo>
+        <poster>https://imgs.search.brave.com/aS2vaFUSjzXGIuvXWTBWf69n0oBfRJItCYCji1VMNL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb25h/cnRlLm9yZy5teC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOS8w/OS9QZXNhZGlsbGEt/ZW4tbGEtQ2FsbGUt/ZGVsLUluZmllcm5v/LVBvc3Rlci0yNjB4/NDAwLmpwZw</poster>
         <director>Wes Craven</director>
         <año>1984</año>
         <tipo>Terror</tipo>
@@ -812,6 +857,7 @@
 
     <pelicula id="46">
         <titulo>28 semanas después</titulo>
+        <poster>https://imgs.search.brave.com/WkrQiZ9j1J-QT2nqjrVcNHafP9zG5WgRCdjrTgvnhd8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b3JpZ2luYWxmaWxt/YXJ0LmNvbS9jZG4v/c2hvcC9wcm9kdWN0/cy8yOF93ZWVrc19s/YXRlcl8yMDA3X2Zy/X29yaWdpbmFsX2Zp/bG1fYXJ0LmpwZz92/PTE2MzU0NjA5NzEm/d2lkdGg9MTIwMA</poster>
         <director>Juan Carlos Fresnadillo</director>
         <año>2007</año>
         <tipo>Terror</tipo>
@@ -830,6 +876,7 @@
 
     <pelicula id="47">
         <titulo>[REC]</titulo>
+        <poster>https://imgs.search.brave.com/Rr2UnLNzGOSSxuzfJljpnyMZQjCMmmWY3EZUyp0-sys/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bW92aWVwb3N0ZXJz/aG9wLmNvbS9yZWMt/bW92aWUtcG9zdGVy/LTIwMDctMTAxMDQy/MDU4OC5qcGc</poster>
         <director>Jaume Balagueró</director>
         <año>2007</año>
         <tipo>Terror</tipo>
@@ -848,6 +895,7 @@
 
     <pelicula id="48">
         <titulo>Estación Zombie: Tren a Busan</titulo>
+        <poster>https://imgs.search.brave.com/HrX5Rb8faNn0Vkd2Y4w452hIFT47xVpOfjhZuzsFvqo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2Rv/YmxhamUvaW1hZ2Vz/LzUvNTkvRXN0YWNp/JUMzJUIzbl9ab21i/aWVfcG9zdGVyX2hk/LmpwZy9yZXZpc2lv/bi9sYXRlc3Qvc2Nh/bGUtdG8td2lkdGgt/ZG93bi8yNjg_Y2I9/MjAyMzEyMjUyMzA3/MzMmcGF0aC1wcmVm/aXg9ZXM</poster>
         <director>Yeon Sang-ho</director>
         <año>2016</año>
         <tipo>Acción</tipo>
@@ -866,6 +914,7 @@
 
     <pelicula id="49">
         <titulo>Y dónde está el fantasma 2</titulo>
+        <poster>https://imgs.search.brave.com/YgmFR6wUbwjbXhbotT_OzrdnnXnGTVVKp1thkVDtU0o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aGVtb3ZpZWRi/Lm9yZy90L3AvdzIy/MF9hbmRfaDMzMF9m/YWNlL3F2M3VaVXRh/NFVXUk5ETWRES1NS/R2hBNmx3Qy5qcGc</poster>
         <director>Michael Tiddes</director>
         <año>2014</año>
         <tipo>Comedia</tipo>
@@ -884,6 +933,7 @@
 
     <pelicula id="50">
         <titulo>Eterno resplandor de una mente sin recuerdos</titulo>
+        <poster>https://imgs.search.brave.com/-tCUoQGXdDkuIT5ZEW32TZ0TlkCoY57z34MnQMBi6KI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFjSlpvblpGcUwu/anBn</poster>
         <director>Michel Gondry</director>
         <año>2004</año>
         <tipo>Drama</tipo>
