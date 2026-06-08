@@ -26,55 +26,5 @@
             <p>Cargando cartelera desde el archivo XML...</p>
         </div>
     </main>
-
-    <script>
-        async function cargarCartelera() {
-            try {
-                const respuesta = await fetch('peliculas.xml');
-                const textoXML = await respuesta.text();
-                
-                const parser = new DOMParser();
-                const xml = parser.parseFromString(textoXML, "text/xml");
-                
-                const peliculas = xml.getElementsByTagName("pelicula");
-                const contenedor = document.getElementById("contenedor-peliculas");
-                
-                let htmlContenido = "";
-
-                for (let i = 0; i < peliculas.length; i++) {
-                    const id = peliculas[i].getAttribute("id");
-                    const titulo = peliculas[i].getElementsByTagName("titulo")[0].textContent;
-                    const director = peliculas[i].getElementsByTagName("director")[0].textContent;
-                    const año = peliculas[i].getElementsByTagName("año")[0].textContent;
-                    const tipo = peliculas[i].getElementsByTagName("tipo")[0].textContent;
-                    const rating = peliculas[i].getElementsByTagName("puntuacion_general")[0].textContent;
-
-                    htmlContenido += `
-                        <div class="tarjeta-pelicula">
-                            <div>
-                                <h3 class="titulo-peli">${titulo}</h3>
-                                <p class="info-peli"><strong>Año:</strong> ${año}</p>
-                                <p class="info-peli"><strong>Género:</strong> ${tipo}</p>
-                                <p class="info-peli"><strong>Director:</strong> ${director}</p>
-                            </div>
-                            <div>
-                                <div class="rating-peli">★ ${rating}</div>
-                                <a class="btn-ver" href="detalle.html?id=${id}">Ver Ficha</a>
-                            </div>
-                        </div>
-                    `;
-                }
-
-                contenedor.innerHTML = htmlContenido;
-
-            } catch (error) {
-                console.error(error);
-                document.getElementById("contenedor-peliculas").innerHTML = 
-                    "<p style='color: red;'>Error al cargar las películas. Asegúrate de estar usando un servidor local o extensión Live Server.</p>";
-            }
-        }
-
-        window.onload = cargarCartelera;
-    </script>
 </body>
 </html>

@@ -77,46 +77,5 @@
 
         </div>
     </main>
-
-    <script>
-        async function calcularMetricas() {
-            try {
-                const respuesta = await fetch('peliculas.xml');
-                const textoXML = await respuesta.text();
-                const parser = new DOMParser();
-                const xml = parser.parseFromString(textoXML, "text/xml");
-
-                const peliculas = xml.getElementsByTagName("pelicula");
-                const total = peliculas.length;
-
-                let sumaRatings = 0;
-                let maxRating = -1;
-                let tituloMaxRating = "";
-
-                for (let i = 0; i < total; i++) {
-                    const titulo = peliculas[i].getElementsByTagName("titulo")[0].textContent;
-                    const rating = parseFloat(peliculas[i].getElementsByTagName("puntuacion_general")[0].textContent);
-
-                    sumaRatings += rating;
-
-                    if (rating > maxRating) {
-                        maxRating = rating;
-                        tituloMaxRating = titulo;
-                    }
-                }
-
-                const promedio = total > 0 ? (sumaRatings / total).toFixed(2) : 0;
-
-                document.getElementById("total-peliculas").textContent = total;
-                document.getElementById("promedio-rating").textContent = promedio;
-                document.getElementById("mejor-pelicula").innerHTML = `${tituloMaxRating} <br><span style='font-size: 1.1rem; color: #fff;'>★ ${maxRating}</span>`;
-
-            } catch (error) {
-                console.error(error);
-            }
-        }
-
-        window.onload = calcularMetricas;
-    </script>
 </body>
 </html>

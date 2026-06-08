@@ -69,56 +69,5 @@
             <p style="text-align: center;">Calculando puntuaciones...</p>
         </div>
     </main>
-
-    <script>
-        async function cargarTop10() {
-            try {
-                const respuesta = await fetch('peliculas.xml');
-                const textoXML = await respuesta.text();
-                const parser = new DOMParser();
-                const xml = parser.parseFromString(textoXML, "text/xml");
-                
-                const peliculas = Array.from(xml.getElementsByTagName("pelicula"));
-
-                peliculas.sort((a, b) => {
-                    const ratingA = parseFloat(a.getElementsByTagName("puntuacion_general")[0].textContent);
-                    const ratingB = parseFloat(b.getElementsByTagName("puntuacion_general")[0].textContent);
-                    return ratingB - ratingA;
-                });
-
-                const top10 = peliculas.slice(0, 10);
-                const contenedor = document.getElementById("lista-top10");
-                let htmlContenido = "";
-
-                top10.forEach((pelicula, indice) => {
-                    const id = pelicula.getAttribute("id");
-                    const titulo = pelicula.getElementsByTagName("titulo")[0].textContent;
-                    const director = pelicula.getElementsByTagName("director")[0].textContent;
-                    const año = pelicula.getElementsByTagName("año")[0].textContent;
-                    const tipo = pelicula.getElementsByTagName("tipo")[0].textContent;
-                    const rating = pelicula.getElementsByTagName("puntuacion_general")[0].textContent;
-
-                    htmlContenido += `
-                        <div class="fila-ranking">
-                            <div class="posicion">#${indice + 1}</div>
-                            <div class="detalles-ranking">
-                                <h3>${titulo}</h3>
-                                <span style="color: #aaa; font-size: 0.9rem;">${año} | ${tipo} | Dir: ${director}</span>
-                            </div>
-                            <div class="puntuacion-top">★ ${rating}</div>
-                            <a class="btn-ver" href="detalle.html?id=${id}" style="margin-top: 0; margin-left: 20px;">Ver Ficha</a>
-                        </div>
-                    `;
-                });
-
-                contenedor.innerHTML = htmlContenido;
-
-            } catch (error) {
-                console.error(error);
-            }
-        }
-
-        window.onload = cargarTop10;
-    </script>
 </body>
 </html>
